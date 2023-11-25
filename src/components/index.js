@@ -6,5 +6,6 @@ import { PackageList } from "./PackageList";
 import { PackageCard } from "./PackageCard";
 import {FrontNav} from "./FrontNav"
 import { FormItem } from "../components/FormItem"
+import { BookBtn } from "./BookBtn";
 
-export {Layout,FrontNav, SubmitBtn, Loading, DataTable, PackageList, PackageCard, FormItem}
+export {Layout,FrontNav, SubmitBtn, Loading, DataTable, PackageList, PackageCard, FormItem, BookBtn}

@@ -1,11 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
-import useReducer,{setUser,clearUser} from "./userSlice";
+import userReducer,{setUser,clearUser} from "./userSlice";
+import bookReducer,{setBook,clearBook} from "./bookSlice";
 
 const store = configureStore({
     reducer:{
-        user:useReducer,
+        user:userReducer,
+        book:bookReducer,
     }
 })
 
 export default store
-export {setUser,clearUser}
+export {setUser, clearUser, setBook, clearBook}

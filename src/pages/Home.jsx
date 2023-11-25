@@ -105,11 +105,11 @@ export const Home = () => {
 
 
 
-        <div className="container-fluid mt-5 border-bottom border-2  pb-5">
+        <div className="container-fluid mt-5   pb-5">
             <PackageList title="TOP DESTINATIONS" places={[...featured].splice(0, 3)} loading={loading} />
         </div>
 
-        <div className="container-fluid mt-5 border-bottom border-2 pb-5">
+        <div className="container-fluid mt-5 pt-5 pb-2 top-bg">
             <PackageList title="Tour of the Year" places={[...most].splice(0, 3)} loading={loading} most />
         </div>
 

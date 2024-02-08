@@ -9,7 +9,7 @@ import moment from "moment"
 export const Place = () => {
     const [place, setPlace] = useState({})
     const [loading, setLoading] = useState(false)
-    const [similars, setSimilars] = useState([])
+    
     const [imgLarge, setImgLarge] = useState('')
     const [form, setForm] = useState({ rating: 1 })
     const [rating, setRating] = useState(0)
@@ -29,7 +29,6 @@ export const Place = () => {
 
                 return http.get(`places/${params.id}/similar`)
             })
-            .then(({ data }) => setSimilars(data))
             .catch(err => { })
             .finally(() => setLoading(false))
     }, [params.id])
@@ -73,7 +72,7 @@ export const Place = () => {
     return loading ? <Loading /> : <>
         <div className="container-fluid">
             <div className="row ">
-                <img className="img-fluid m-0 p-0 position-absolute" src={`${imgUrl(imgLarge)}`} alt="" />
+                <img className="img-fluid m-0 p-0 position-absolute w-100 h-75" src={`${imgUrl(imgLarge)}`} alt="" />
                 <h1 className="text-center banner-text1 text-danger position-relative mb-5 pb-5">{place.name}</h1>
             </div>
         </div>
@@ -247,13 +246,6 @@ export const Place = () => {
                 </div>
             </div>
         </div>
-        {similars.length ? <div className="container border-top mt-5 border-2 border-dark">
-            <div className="row mt-4">
-                <h2 className="text-center banner-text text-danger ">More Exciting Package</h2>
-                <div className="col-lg-4">
-                    <PackageList places={[...similars].splice(0, 3)} />
-                </div>
-            </div>
-        </div> : null}
+        
     </>
 }

@@ -246,3 +246,6 @@
 textarea.form-control {
     width: 400px;
 }
+nav.bg-body-tertiary.navbar.navbar-expand-lg.navbar-light {
+    background-color: #e4e4e4 !important;
+}

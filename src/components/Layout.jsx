@@ -51,8 +51,8 @@ export const Layout = () => {
             <div className="row">
               <div className="col-auto me-auto">
                 <div className="top-nav d-flex">
-                  <a href="tel:+123-456-7890" className="text-light"><i className="fa fa-phone-square me-2" />+123-456-7890</a>
-                  <a href="mailto:mail@ecom.com" className="text-light border-start ms-3"><i className="fa fa-envelope me-2 ms-3" />mail@ecom.com</a>
+                  <a href="tel:+123-456-7890" className="text-light"><i className="fa fa-phone-square me-2" />9812317564</a>
+                  <a href="mailto:mail@ecom.com" className="text-light border-start ms-3"><i className="fa fa-envelope me-2 ms-3" />navigate@gmail.com</a>
                 </div>
               </div>
               <div className="col-auto">

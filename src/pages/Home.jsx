@@ -44,41 +44,7 @@ export const Home = () => {
                 <h1 className="text-center fw-bolder banner-text1 mb-5 text-danger">Its A Big World Out There.
                     <br />Go Explore<br /></h1>
             </div>
-            <div className="container">
-                <div className="d-flex flex-row mb-3 justify-content-center mt-5">
-                    <div className="p-2">
-                        <form>
-                            <div className="btn-group">
-                                <button type="button" className="btn btn-light dropdown-toggle b-button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    What Are You Interested In?
-                                </button>
-                                <ul className="dropdown-menu bg-danger">
-                                    <li><a className="dropdown-item" href="#">Activities</a></li>
-                                    <li><a className="dropdown-item" href="#">Trekking</a></li>
-                                    <li><a className="dropdown-item" href="#">Tour</a></li>
-                                </ul>
-                            </div>
-                        </form>
-                    </div>
-                    <div className="p-2">
-                        <form>
-                            <div className="btn-group">
-                                <button type="button" className="btn btn-light dropdown-toggle  b-button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    What Would You Like To Do?
-                                </button>
-                                <ul className="dropdown-menu bg-danger">
-                                    <li><a className="dropdown-item" href="#">8000m Expedition</a></li>
-                                    <li><a className="dropdown-item" href="#">8000m Expedition</a></li>
-                                    <li><a className="dropdown-item" href="#">8000m Expedition</a></li>
-                                </ul>
-                            </div>
-                        </form>
-                    </div>
-                    <div className="p-2">
-                        <button className="btn btn-danger b-button">Submit</button>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
 

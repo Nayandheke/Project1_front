@@ -10,6 +10,8 @@ const http = axios.create({
     }
 })
 
+
+
 http.interceptors.request.use(config => {
     const token = fromStorage('130fronttoken')
 
